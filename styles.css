@@ -7,6 +7,8 @@
 .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content:center;
+    background-color: #EAEDF0;
 }
 
 .section {
@@ -25,7 +27,7 @@
     background-color: #EAEDF0;
     height: 60px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
   }
 
 .navbar {
@@ -57,7 +59,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to top left, rgb(231, 183, 119) 20%, rgb(54, 143, 179) 80%);
+    background-image: url("/images/home-page.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 h1 {
@@ -69,8 +74,8 @@ h1 {
 /* CONTENT */
 .content-container {
     background-color: #EAEDF0;
-    height: 700px;
-    padding: 10px 10px; 
+    height: 550px;
+    padding: auto 10px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -80,7 +85,7 @@ h1 {
     width: 200px;
     height: 200px;
     max-width: 100%;
-    margin: 5rem auto;
+    margin-bottom: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,4 +149,200 @@ a {
 .footer-item li p {
     padding-top: 3px;;
     font-size: 0.60em;
+}
+
+/* ABOUT */
+.heading-about {
+    width:100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/images/begin_2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.heading-text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 150px;
+}
+
+.heading-text h1 {
+    background-color: gray;
+    font-size: 50px;
+    background-image: linear-gradient(45deg, rgb(231, 183, 119) 20%, rgb(54, 143, 179) 80%);
+    background-image: conic-gradient(45deg, rgb(231, 183, 119) 20%, rgb(54, 143, 179) 80%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    color: transparent;
+    text-shadow: none;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}
+
+.about-container {
+    width:1000px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.content-about {
+    width: 450px;
+    height: 400px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to top left, rgb(231, 183, 119) 20%, rgb(54, 143, 179) 80%);
+}
+
+.content-about-box {
+    width: 450px;
+    height: 400px;
+    padding: 20px;
+    background-color: #EAEDF0;
+    background-clip: padding-box;
+    border: 5px solid transparent;
+    box-shadow: 0 3px 9px black, inset 0 0 9px white;
+}
+
+.image-container {
+    width: 450px;
+    height: 400px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to top left, rgb(231, 183, 119) 20%, rgb(54, 143, 179) 80%);
+}
+
+.image {
+    width: 450px;
+    height: 400px;
+    padding: 20px;
+    background-image: url('/images/do-what-you-love.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-clip: padding-box;
+    border: 5px solid transparent;
+    box-shadow: 0 3px 9px black, inset 0 0 9px white;
+}
+
+/* TECHNICAL KNOWLEDGE */
+.heading-tech {
+    width:100%;
+    height: 500px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-image: url("/images/tech.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.heading-text-tech {
+    padding-left: 50px;
+}
+
+.heading-text-tech h1 {
+    color: white;
+    font-size: 50px;
+    text-shadow: none;
+}
+
+.heading-text h2 {
+    background-color: gray;
+    font-size: 30px;
+    background-image: linear-gradient(45deg, rgb(231, 183, 119) 20%, rgb(54, 143, 179) 80%);
+    background-image: conic-gradient(45deg, rgb(231, 183, 119) 20%, rgb(54, 143, 179) 80%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    color: transparent;
+    text-shadow: none;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+
+.icon-grid {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid white;
+    background-image: linear-gradient(to top left, rgb(231, 183, 119) 20%, rgb(54, 143, 179) 80%);
+    box-shadow: 0 20px 35px rgb(184, 176, 176), inset 0 0 9px white;
+}
+
+.icon-item {
+    font-size: 50px;
+    color: white;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+.tech-container {
+    background-color: #EAEDF0;
+    height: 100px;
+    padding: auto 10px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* TABLET */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .about-container {
+        width: 500px;
+    }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 961px) {
+    .content-container {
+        width: 1000px;
+    }
+
+    .heading {
+        background-size: 1000px;
+    }
+
+    .navbar-container {
+        width: 1600px;
+    }
+
+    .about-container {
+        width: 1000px;
+        height: 550px;
+    }
+
+    .header-container {
+        width: 1000px;
+    }
+
+    .heading-about {
+        background-size: 1000px;
+        
+
+    .heading-tech {
+        background-size: 1000px;
+    }
 }
